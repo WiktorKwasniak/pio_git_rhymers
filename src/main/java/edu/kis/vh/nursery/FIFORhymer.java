@@ -18,3 +18,5 @@ public class FIFORhymer extends defaultCountingOutRhymer {
 		return ret;
 	}
 }
+
+// skrót alt + →/← pozwala przejść do ostatnio odwiedzonego pliku
