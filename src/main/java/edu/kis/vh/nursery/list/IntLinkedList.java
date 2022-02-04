@@ -4,7 +4,7 @@ public class IntLinkedList {
 
 	private static final int ERROR_CODE = -1;
 	Node last;
-	int i;
+	private int i;
 
 	public void push(int i) {
 		if (last == null)
@@ -27,15 +27,23 @@ public class IntLinkedList {
 	public int top() {
 		if (isEmpty())
 			return ERROR_CODE;
-		return last.value;
+		return last.getValue();
 	}
 
 	public int pop() {
 		if (isEmpty())
 			return ERROR_CODE;
-		int ret = last.value;
+		int ret = last.getValue();
 		last = last.prev;
 		return ret;
+	}
+
+	int getI() {
+		return i;
+	}
+
+	void setI(int i) {
+		this.i = i;
 	}
 
 }
