@@ -9,7 +9,11 @@ public class DefaultCountingOutRhymer {
 
 	private int[] numbers = new int[TABLE_SIZE];
 
-	public int total = EMPTY_TOTAL;
+	private int total = EMPTY_TOTAL;
+
+	public int getTotal() {
+		return total;
+	}
 
 	public void countIn(int in) {
 		if (!isFull())
