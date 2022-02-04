@@ -8,7 +8,7 @@ public class IntLinkedList {
 
 	private static final int ERROR_CODE = -1;
 	Node last;
-	private int i;
+	private int i; // TODO: change name to be more informative
 
 	// Push new node to the list
 	public void push(int i) {
